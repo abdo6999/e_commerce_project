@@ -1,0 +1,57 @@
+.navbar-toggler{
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+.navbar-brand {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.collapse {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item:hover {
+  a {
+    color: var(--sectionHover-color);
+  }
+}
+.nav-item.active {
+  a {
+    color: var(--accent-color);
+  }
+}
+.search {
+  display: flex;
+  input,button {
+    border: 1px solid rgba(0, 0, 0,0.2);
+    outline: none;
+  }
+  input:focus {
+    border: 1px solid rgba(0, 0, 0,0.5);
+    border-right: 0;
+  }
+  &:has(input:focus) button {
+    border: 1px solid rgba(0, 0, 0,0.5);
+    border-left: 0;
+  }
+
+  input {
+    border-right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 0;
+    svg {
+      color: white;
+    }
+  }
+}
