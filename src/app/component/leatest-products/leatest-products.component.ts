@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { ProductCardComponent } from "../utilities/product-card/product-card.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-featured-products',
+  selector: 'app-leatest-products',
   standalone: true,
-  imports: [CommonModule, ProductCardComponent],
-  templateUrl: './featured-products.component.html',
-  styleUrl: './featured-products.component.scss'
+  imports: [ProductCardComponent,CommonModule],
+  templateUrl: './leatest-products.component.html',
+  styleUrl: './leatest-products.component.scss'
 })
-export class FeaturedProductsComponent {
+export class LeatestProductsComponent {
   products = [
     {
       imageSrc:'/assets/leatest-products/image 3 (3).png',

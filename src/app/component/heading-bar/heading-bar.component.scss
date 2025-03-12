@@ -9,7 +9,7 @@
   font-size: 14px;
 }
 
-.phone,.login,.cart,.email,.currency,.lang {
+.phone,.login,.cart,.email {
   cursor: pointer;
 }
 .contact, .email, .phone, .user-actions, .login, .cart, .lang, .currency {
@@ -19,22 +19,20 @@
 }
 
 .email, .phone, .login, .lang, .currency,.cart {
-  padding: 5px; // Increased padding for better spacing
+  padding: 5px;
   margin: 5px;
-  border-radius: 5px; // Optional: for a rounded look
+  border-radius: 5px;
   svg {
-    padding: 2px;
     margin: 2px;
+    display: inline-block;
   }
 }
 p {
-  line-height: 1; // Prevent extra height
+  margin: 2px;
+  display: inline-block;
 }
-// Ensure icons are centered in flex items
+
 svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 20px;
   height: 20px;
 }

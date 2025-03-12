@@ -1,0 +1,39 @@
+.active {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.tab {
+  cursor: pointer;
+  &:hover:not(.active) {
+    p {
+      color: var(--sectionHover-color);
+    }
+  }
+}
+:host::ng-deep {
+  .product-info {
+    flex-direction: row !important;
+    padding: 0 !important;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .product-title,
+  .current-price {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: clamp(10px,2vw,15px);
+    flex-shrink: 1;
+    text-overflow: ellipsis;
+    margin: 0;
+    height: fit-content;
+  }
+
+  .original-price {
+    display: inline-block;
+    height: fit-content;
+    font-size: min(2vw,0.8em);
+    vertical-align: bottom;
+    align-self: flex-end;
+  }
+}
