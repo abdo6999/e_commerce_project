@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductCardComponent } from "../utilities/product-card/product-card.component";
+import { ProductCardComponent } from "../../utilities/product-card/product-card.component";
 
 @Component({
   selector: 'app-featured-products',

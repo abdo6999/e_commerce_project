@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProductCardComponent } from "../utilities/product-card/product-card.component";
+import { ProductCardComponent } from "../../utilities/product-card/product-card.component";
 import { CommonModule } from '@angular/common';
 
 @Component({

@@ -19,9 +19,10 @@
 }
 .shop-btn{
   background-color:  rgb(from var(--accent-color) r g b / 0.9);
-
+  transition: all 0.2s ease-in-out;
   &:hover {
     background-color: rgb(from var(--accent-color) r g b / 1) ;
+    transform: scale(1.02);
     .shop-link{
       color: rgba(255, 255, 255, 1);
     }
