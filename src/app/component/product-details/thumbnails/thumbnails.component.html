@@ -1,0 +1,72 @@
+<div class="container my-5">
+  <div class="row row-gap-4">
+    <!-- Thumbnails -->
+    <div class="col-md-2 d-none d-lg-flex flex-column gap-3">
+      <div class="thumbnail">
+        <img src="/assets/imgs/Rectangle 35.jpg" alt="Thumbnail" class="img-fluid">
+      </div>
+      <div class="thumbnail">
+        <img src="/assets/imgs/Rectangle 134.jpg" alt="Thumbnail" class="img-fluid">
+      </div>
+      <div class="thumbnail">
+        <img src="/assets/imgs/Rectangle 136.jpg" alt="Thumbnail" class="img-fluid">
+      </div>
+    </div>
+
+    <!-- Main Product Image -->
+    <div class="col-md-5 text-center">
+      <img src="/assets/imgs/Rectangle 138.jpg" class="product-image img-fluid rounded shadow" alt="Main Product">
+    </div>
+
+    <!-- Product Details -->
+    <div class="product-details col-md-5 my-auto">
+      <h1 class="fw-bold display-5">Playwood Arm Chair</h1>
+
+      <!-- Rating Section -->
+      <div class="d-flex align-items-center">
+        <star-rating [starType]="'svg'" [readOnly]="true" [rating]="3" staticColor="ok"></star-rating>
+        <span class="ms-2 text-muted fs-5">(22 reviews)</span>
+      </div>
+
+      <!-- Pricing -->
+      <div class="d-flex align-items-center mt-2">
+        <span class="product-price fs-3 fw-bold ">$32.00</span>
+        <span class="original-price text-decoration-line-through ms-2 fs-5 ">$42.00</span>
+      </div>
+
+      <!-- Product Description -->
+      <p class="fw-semibold fs-5 mt-3">Color:</p>
+      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.</p>
+
+      <!-- Actions: Add to Cart & Wishlist -->
+      <div class="d-flex align-items-center gap-3 mt-4">
+        <button class="btn  btn-lg px-4">Add to Cart</button>
+        <button class="btn btn-lg d-flex align-items-center gap-2">
+          <i class="fa-regular fa-heart fs-4"></i>
+        </button>
+      </div>
+
+      <!-- Meta Info (Categories, Tags, Share) -->
+      <div class="mt-4">
+        <div class="d-flex align-items-center">
+          <strong class="fs-6">Categories:</strong>
+          <span class="text-muted ms-2">Furniture, Chairs</span>
+        </div>
+
+        <div class="d-flex align-items-center mt-2">
+          <strong class="fs-6">Tags:</strong>
+          <span class="text-muted ms-2">Modern, Comfort</span>
+        </div>
+
+        <div class="d-flex align-items-center mt-2">
+          <strong class="fs-6">Share:</strong>
+          <div class="d-flex ms-2 gap-2">
+            <i class="fa-brands fa-facebook fs-5 text-primary"></i>
+            <i class="fa-brands fa-instagram fs-5 text-danger"></i>
+            <i class="fa-brands fa-twitter fs-5 text-info"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

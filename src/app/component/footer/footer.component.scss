@@ -1,0 +1,24 @@
+
+
+li a,p,input::placeholder {
+  color: #8A8FB9 !important;
+}
+li a:hover {
+  color: var(--sectionHover-color) !important;
+}
+
+svg:hover {
+
+  color: var(--sectionHover-color) !important;
+}
+
+button {
+  background-color:  rgb(from var(--accent-color) r g b / 0.9);
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.2s ease-in-out;
+  text-wrap: nowrap;
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgb(from var(--accent-color) r g b / 1) ;
+  }
+}

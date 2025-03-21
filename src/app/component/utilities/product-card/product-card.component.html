@@ -1,6 +1,6 @@
 <div class="product-card card h-100 p-1 py-lg-1 px-lg-4">
   <div class="product-image-container overflow-hidden d-flex flex-column justify-content-center align-items-center flex-grow-1 p-2 mt-5">
-    <img [src]="imageSrc" class="w-100 object-fit-cover h-auto" [alt]="title">
+    <img [src]="imageSrc" class="w-100 object-fit-cover h-auto" [alt]="productName">
   </div>
   <div class="product-actions">
     <i class="fa-solid fa-cart-shopping cart"></i>
@@ -8,12 +8,12 @@
     <i class="fa-solid fa-magnifying-glass-plus glass"></i>
   </div>
   <div class="product-info p-3 d-flex flex-column text-center flex-grow-0">
-    <h5 class="product-title">{{ title }}</h5>
+    <h5 class="product-title">{{ productName }}</h5>
     <p *ngIf="code" class="product-code">Code - {{ code }}</p>
     <div class="price-container d-flex gap-1 justify-content-center">
       <p class="current-price">{{ currentPrice }}</p>
       <p *ngIf="originalPrice" class="original-price text-danger text-decoration-line-through">{{ originalPrice }}</p>
     </div>
-    <button *ngIf="isFeatured" type="button" class="btn py-lg-2 px-lg-1 details-btn">View Details</button>
+    <button *ngIf="isFeatured" type="button" class="btn rounded-0 py-lg-2 px-lg-1 details-btn">View Details</button>
   </div>
 </div>

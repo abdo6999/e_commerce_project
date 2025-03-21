@@ -1,0 +1,99 @@
+// General checkbox style
+.form-check {
+  padding: 0;
+}
+
+.form-check-input {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0 5px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  position: relative;
+  border-radius: 0;
+  border: 0.15em solid currentColor;
+  padding: 0.15em;
+}
+.form-check-input:checked {
+  border: none;
+}
+// Common checkmark (✓) styling with animation
+.form-check-input::after {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  color: transparent;
+  transform-origin: bottom left;
+  background-color: CanvasText;
+  transform: scale(0);
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.form-check-input:checked::after {
+  transform: scale(1);
+}
+
+// 1. Product Brand
+.product-brand .form-check-input {
+  background-color: #E5E0FC;
+  color: #603EFF;
+}
+.product-brand .form-check-input:checked::after {
+  background-color: #603EFF;
+}
+
+
+// 2. Discount Offer
+.discount-offer .form-check-input {
+  background-color: #FFDBF1;
+  color: #FF3EB2;
+}
+.discount-offer .form-check-input:checked::after {
+  background-color: #FF3EB2;
+}
+
+// 3. Rating Item
+.rating-item .form-check-input {
+  background-color: #FFF6DA;
+  color: #FFCC2E;
+}
+.rating-item .form-check-input:checked::after {
+  background-color: #FFCC2E;
+}
+
+// 4. Categories
+.categories .form-check-input {
+  background-color: #FFDBF1;
+  color: #FF3EB2;
+
+}
+.categories .form-check-input:checked::after {
+  background-color: #FF3EB2;
+}
+
+
+// 5. Price Filter
+.price-filter .form-check-input {
+  background-color: #FFDBF1;
+  color: #FF3EB2;
+}
+.price-filter .form-check-input:checked::after {
+  background-color: #FF3EB2;
+}
+
+
+div span {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: block;
+}
+h6 {
+  color: var(--text-color);
+  border-bottom: 1px solid ;
+  width: fit-content;
+}

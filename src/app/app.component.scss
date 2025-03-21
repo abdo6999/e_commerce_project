@@ -11,6 +11,68 @@
       font-weight: bold;
     }
   }
+
+  .bg-brown {
+    background-color: brown;
+  }
+  .bg-purple {
+    background-color: purple;
+  }
+  .product-list  {
+    column-gap: 2px;
+  }
+  .product-card {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-5px);
+      .product-actions {
+        opacity: 1;
+      }
+    }
+    .product-image-container {
+      img {
+        transition: transform 0.3s ease-in-out;
+      }
+      &:hover img {
+        transform: scale(1.05);
+      }
+    }
+
+    .product-actions {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      gap: 8px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+
+
+
+      svg {
+        background-color: #ffffff;
+        padding: 8px;
+        border-radius: 50%;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        color: #1389FF;
+      }
+
+      svg:hover {
+        color: var(--sectionHover-color);
+      }
+    }
+
+
+
+
+  }
 }
 
 

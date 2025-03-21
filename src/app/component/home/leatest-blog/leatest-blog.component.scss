@@ -1,0 +1,36 @@
+.blog-card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .blog-img {
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .blog-title {
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+
+  .blog-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; // Limits text to 3 lines
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .read-more:hover {
+    color: var(--sectionHover-color) !important;
+  }
+}

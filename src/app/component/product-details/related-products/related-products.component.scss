@@ -1,0 +1,18 @@
+.related-products .card {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px 7px rgba(0 ,0 ,0 , 20%);
+}
+
+.related-products .card:hover {
+  transform: translateY(-5px);
+}
+
+.related-products .card-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.related-products .card-img-top {
+  height: 250px;
+  object-fit: cover;
+}

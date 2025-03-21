@@ -1,0 +1,29 @@
+.small-product-card {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.small-product-img {
+  width: 60px;  /* Adjust size as needed */
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product-price {
+  font-size: 13px;
+  font-weight: bold;
+}

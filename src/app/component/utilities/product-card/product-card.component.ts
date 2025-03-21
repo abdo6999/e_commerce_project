@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ProductCardComponent {
   @Input() imageSrc: string = '';
-  @Input() title: string = '';
+  @Input() productName: string = '';
   @Input() code?: string;
   @Input() currentPrice: string = '';
   @Input() originalPrice?: string;

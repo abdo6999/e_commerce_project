@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="section-header">
+    <h1>Featured Products</h1>
+  </div>
+  <div class="product-list py-2 row flex-nowrap overflow-x-scroll overflow-auto my-4">
+    <div class="col-sm-6 col-md-4 col-lg-3 col-6" *ngFor="let product of products">
+      <app-product-card
+        [imageSrc]="product.imageSrc"
+        [productName]="product.title"
+        [code]="product.code"
+        [currentPrice]="product.currentPrice"
+        [isFeatured]="product.isFeatured">
+      </app-product-card>
+    </div>
+
+  </div>
+  <div class="control d-flex align-items-center justify-content-center gap-4 py-4 my-4">
+    <ol class="indicators d-flex column-gap-4 p-0 m-0">
+      <li class="active"></li>
+      <li ></li>
+      <li ></li>
+    </ol>
+  </div>
+</div>

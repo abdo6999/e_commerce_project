@@ -1,0 +1,11 @@
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0px 10px 5px rgba(0, 0, 0, 0.2); // Bootstrap doesn't have an exact match for this
+
+  .card-img-top {
+    width: 100%;
+    aspect-ratio: 4/3; // Ensures proportional image resizing
+    object-fit: cover; // Prevents distortion
+  }
+}

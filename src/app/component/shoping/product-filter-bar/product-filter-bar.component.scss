@@ -1,0 +1,12 @@
+.form-select,input {
+  box-sizing: content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  height: 18px !important;
+  min-height: unset;
+}
+
+
+h2 {
+  color: var(--text-color);
+}

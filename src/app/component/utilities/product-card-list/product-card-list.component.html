@@ -1,0 +1,52 @@
+<div class="card product-card p-3  rounded-2">
+  <div class="row g-3 align-items-center">
+    <!-- Product Image -->
+    <div class="col-md-3">
+      <img src="/assets/imgs/image 3 (3).png" class="img-fluid rounded" alt="Product Image">
+    </div>
+
+    <!-- Product Details -->
+    <div class="col-md-9">
+      <div class="card-body p-0 d-flex flex-column row-gap-3">
+        <!-- Product Name -->
+        <div class="d-flex gap-2 column-gap-5 justify-content-start align-items-center">
+          <h5 class="fw-bold  m-0">Dictum morbi</h5>
+          <!-- Product Colors -->
+          <div class="d-flex column-gap-1">
+            <span class="color-dot bg-warning rounded-circle"></span>
+            <span class="color-dot bg-purple rounded-circle"></span>
+            <span class="color-dot bg-primary rounded-circle"></span>
+          </div>
+        </div>
+
+        <!-- Price Section -->
+        <div class="d-flex align-items-center">
+          <span class="fw-bold text-dark">$26.00</span>
+          <span class="text-decoration-line-through text-danger ms-2">$52.00</span>
+          <div class="ms-3">
+            <star-rating [starType]="'svg'" [readOnly]="true" [rating]="4" staticColor="ok"></star-rating>
+
+          </div>
+        </div>
+
+        <!-- Product Description -->
+        <p class="text-muted small">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.
+        </p>
+
+        <!-- Action Icons -->
+        <div class="d-flex gap-4">
+          <a href="#" class="text-secondary">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <a href="#" class="text-secondary">
+            <i class="fa-regular fa-heart"></i>
+          </a>
+          <a href="#" class="text-secondary">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

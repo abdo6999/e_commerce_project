@@ -1,0 +1,18 @@
+
+h5 {
+  color: var(--text-color);
+}
+.color-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+svg {
+  color: #1389FF;
+  &:hover {
+    color: var(--sectionHover-color);
+  }
+}

@@ -1,0 +1,55 @@
+<div class="trending-products container">
+  <!-- Section Header -->
+  <div class="section-header">
+    <h1>Trending Products</h1>
+  </div>
+
+  <!-- Grid for 4 Product Cards -->
+  <div class="row row-gap-3">
+    <div class="col-sm-6 col-md-4 col-lg-3 col-6" *ngFor="let product of products | slice:0:4">
+      <app-product-card
+        [imageSrc]="product.imageSrc"
+        [productName]="product.title"
+        [currentPrice]="product.currentPrice"
+        [isFeatured]="false"
+        >
+      </app-product-card>
+    </div>
+  </div>
+
+  <!-- Promotional Banner -->
+  <div class="row mt-5 row-gap-3">
+    <!-- Discount Section - First Column -->
+    <div class="col-md-4 col-6 d-flex flex-column align-items-start text-start gap-2">
+      <p class="discount-title fw-bold fs-3">23% off in all products</p>
+      <a href="#" class="shop-now text-danger text-decoration-underline fs-5">Shop Now</a>
+      <div class="image-wrapper">
+        <img src="/assets/imgs/Rectangle 147.jpg" class="discount-img" alt="Promotional Banner">
+      </div>
+    </div>
+
+    <!-- Discount Section - Second Column -->
+    <div class="col-md-4 col-6 d-flex flex-column align-items-start text-start gap-2">
+      <p class="discount-title fw-bold fs-3">23% off in all products</p>
+      <a href="#" class="shop-now text-danger text-decoration-underline fs-5">Shop Now</a>
+      <div class="image-wrapper">
+        <img src="/assets/imgs/Rectangle 34.jpg" class="discount-img" alt="Promotional Banner">
+      </div>
+    </div>
+
+
+    <!-- Small Product Cards Section -->
+    <div class="col-md-4 d-flex flex-column justify-content-center align-items-start gap-3">
+      <div class="w-100 h-100" *ngFor="let product of products | slice:5:8">
+        <app-small-product-card
+          [imageSrc]="product.imageSrc"
+          [productName]="product.title"
+          [productPrice]="product.currentPrice">
+        </app-small-product-card>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>

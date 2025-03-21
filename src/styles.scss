@@ -3,6 +3,8 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import 'css-star-rating/scss/star-rating';
+
 :root {
   // Basic colors
   --accent-color: #FB2E86;

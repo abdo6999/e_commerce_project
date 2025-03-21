@@ -1,0 +1,29 @@
+h1 {
+  color: #0D134E;
+}
+.product-price {
+  color: var(--text-color);
+}
+button {
+  color: var(--text-color);
+  &:hover {
+    color: var(--sectionHover-color);
+  }
+}
+.original-price {
+  color: var(--accent-color);
+}
+svg {
+  color:#535399;
+}
+.product-details * {
+  margin: 0.3rem 0;
+}
+::ng-deep {
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 5px;
+  }
+}
