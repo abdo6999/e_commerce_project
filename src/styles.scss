@@ -27,7 +27,24 @@
 }
 
 
+.btn-success {
+  --bs-btn-bg: #19D16F;
+  --bs-btn-border-color: #19D16F;
+  --bs-btn-hover-bg: #20a567e0;
+  --bs-btn-hover-border-color: #20a567e0;
+}
 
+
+.btn-danger {
+  --bs-btn-bg: rgb(from var(--accent-color) r g b / 0.9);
+  --bs-btn-border-color: rgb(from var(--accent-color) r g b / 0.9);
+  --bs-btn-hover-bg: rgb(from var(--accent-color) r g b / 1);
+  --bs-btn-hover-border-color: rgb(from var(--accent-color) r g b / 1);
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+}
 
 body {
   font-family: "Josefin Sans", serif , var(--bs-body-font-family);

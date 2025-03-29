@@ -22,7 +22,7 @@
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
-  svg {
+  i {
     margin: 2px;
     display: inline-block;
   }
@@ -32,9 +32,8 @@ p {
   display: inline-block;
 }
 
-svg {
-  width: 20px;
-  height: 20px;
+i {
+  font-size: 20px;
 }
 
 

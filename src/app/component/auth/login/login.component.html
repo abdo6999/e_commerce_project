@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="row login align-items-center justify-content-center h-100">
+    <div class="w-auto">
+      <div class="p-lg-5 p-md-4">
+        <h3 class="text-center mb-3">Login</h3>
+
+        <form [formGroup]="authCredentialsDot"  class="form">
+        <div >
+            <div class="input-group mb-3">
+              <div class="input-group-prepend d-flex align-items-center ">
+                <i class="fa-solid fa-user p-2"></i>
+              </div>
+                <input class="form-control shadow-none h-auto bg-transparent  border-left-0" placeholder="Email Address" type="text" formControlName="username" matInput  id="username" name="username" required>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend d-flex align-items-center">
+                <i class="fa-solid fa-lock p-2"></i>
+              </div>
+                <input autocomplete="current-password" class="form-control shadow-none bg-transparent h-auto  border-right-0 border-left-0" placeholder="Password" [type]='showPassword ? "text" :"password" ' formControlName="password"   id="password" name="password" required>
+                <div class="input-group-append  d-flex align-items-center ">
+                  <button class="d-flex align-items-center w-100 bg-transparent  h-100 border-left-0 rounded-right" type="button" (click)="showPassword = !showPassword">
+                    <i class="fa-solid" [ngClass]="showPassword ? 'fa-eye' : 'fa-eye-slash'"></i>
+                  </button>
+                </div>
+            </div>
+          </div>
+          <div class="pb-2">
+            <a class=" text-decoration-none forget-password">Forgot password?</a>
+          </div>
+          <div >
+            <input value="Sign In" type="submit" [disabled]="!this.authCredentialsDot.valid" class="btn w-100 btn-danger link-light ">
+          </div>
+          <div class="p-2 text-center">
+            <p>
+              Don’t have an Account?
+              <a class="p-1 mb-2 text-black text-decoration-none fw-bold" routerLink="/auth/register">Create account</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- <ng-template #invalidCredentials>
+    <div class="modal-header">
+      <mat-icon>error</mat-icon>
+      <h4 class="pl-2">
+        Invalid Credentials
+      </h4>
+      <button type="button" (click)="hideModal()" class="close pull-right" aria-label="close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body text-center">
+      <div class="alert alert-danger " role="alert">
+        Either username or password are not incorrect!!
+      </div>
+    </div>
+    <button type="button" class="btn btn-danger" (click)="authCredentialsDot.reset();hideModal()">
+      Try Again!
+    </button>
+  </ng-template>
+  -->
+
+</div>

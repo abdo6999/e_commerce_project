@@ -17,19 +17,7 @@
   color: var(--saleTage-color);
   margin: 20px 0;
 }
-.shop-btn{
-  background-color:  rgb(from var(--accent-color) r g b / 0.9);
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    background-color: rgb(from var(--accent-color) r g b / 1) ;
-    .shop-link{
-      color: rgba(255, 255, 255, 1);
-    }
-  }
-  .shop-link{
-    color: rgba(255, 255, 255, 0.9);
-  }
-}
+
 .promotional-img {
   max-width: 50%;
   display: flex;

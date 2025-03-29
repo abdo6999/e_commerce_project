@@ -54,7 +54,7 @@
 
 
 
-      svg {
+      i {
         background-color: #ffffff;
         padding: 8px;
         border-radius: 50%;
@@ -64,7 +64,7 @@
         color: #1389FF;
       }
 
-      svg:hover {
+      i:hover {
         color: var(--sectionHover-color);
       }
     }
@@ -72,6 +72,13 @@
 
 
 
+  }
+  router-outlet + * {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 

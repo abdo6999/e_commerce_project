@@ -1,14 +1,7 @@
 import { Component } from '@angular/core';
-import { StarRatingModule } from 'angular-star-rating';
-import { StarRatingConfigService } from 'angular-star-rating';
-import { RelatedProductsCardComponent } from "../../utilities/related-products-card/related-products-card.component";
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-related-products',
-  standalone: true,
-  imports: [StarRatingModule, RelatedProductsCardComponent,CommonModule],
-  providers:[StarRatingConfigService],
   templateUrl: './related-products.component.html',
   styleUrl: './related-products.component.scss'
 })

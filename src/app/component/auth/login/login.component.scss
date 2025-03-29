@@ -1,0 +1,37 @@
+:root {
+  --primary-color: #264ECA;
+  --text-color: #333;
+  --light-gray: #f8f9fa;
+}
+
+.login {
+  & > div {
+    min-width: min(500px, 100%);
+  }
+  .form-control {
+    transition: none !important;
+    border: none;
+  }
+
+  .input-group-append button {
+    border: none;
+  }
+  .input-group {
+    flex-wrap: nowrap;
+    border-radius: var(--bs-border-radius);
+    border: 1px solid #ced4da;
+  }
+
+  .input-group:has(.form-control:focus){
+    border: 1px solid #acb1b6;
+  }
+
+  .forget-password {
+    cursor: pointer;
+  }
+  p a {
+    cursor: pointer;
+  }
+}
+
+
